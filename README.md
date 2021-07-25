@@ -127,7 +127,7 @@ Example: Return only apartments with 5 rooms in Manila City, Philippines, 20 kms
   
 Example: Return all apartments with 2 rooms.
   
-  GET  http://localhost:4000/api/apartments/search?rooms=5
+  GET  http://localhost:4000/api/apartments/search?rooms=2
   
 Example: Return all apartments in Manila City, Philippines
   

@@ -12,38 +12,38 @@ const apartmentSchema = new mongoose.Schema({
     address: {
         houseNo: {
             type: Number,
-            required: true
+            required: [true, 'House number is required']
         },
         street: {
             type: String,
-            required: true,
+            required: [true, 'Street is required']
         },
 
         postalCode: {
             type: Number,
-            required: true
+            required: [true, 'Postal code is required']
         },
         state: {
             type: String,
-            required: true
+            required: [true, 'State is required']
         }
     },
     city: {
         type: String,
-        required: true
+        required: [true, 'City is required']
     },
     country: {
         type: String,
-        required: true
+        required: [true, 'Country is required']
     },
     geoLocation: {
         type: {
             type: String,
             default: "Point"
-            // enum: ["Point"]
         },
         coordinates: {
-            type: [Number]
+            type: [Number],
+            required: [true, 'Coordinates are required']
         }
     },
     rooms: {

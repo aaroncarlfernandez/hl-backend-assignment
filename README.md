@@ -1,4 +1,4 @@
-# HL Backend Assignment
+# Homelike Backend Assignment
 Simple REST APIs for user registration and authentication, apartment creation and search.
 
 ## Tech Stack
